@@ -13,7 +13,7 @@ namespace MDR.Data.Sql.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201509260254546_initialMigration"; }
+            get { return "201509261255026_initialMigration"; }
         }
         
         string IMigrationMetadata.Source
