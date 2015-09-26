@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MagicDamageReport", "..\..\..\..\Desktop\PetProjects\MagicDamageReport\", "{D3180BC9-7720-46CB-9788-B3991AE801E0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49708"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\PetProjects\MagicDamageReport\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49708\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49708"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\PetProjects\MagicDamageReport\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49708\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49708"
+		SlnRelativePath = "..\..\..\..\Desktop\PetProjects\MagicDamageReport\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDR.Domain", "MDR.Domain\MDR.Domain.csproj", "{9D367164-4D98-490A-917C-AB030CB411C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDR.Data.Sql", "MDR.Data.Sql\MDR.Data.Sql.csproj", "{33486E0D-BD55-498F-86D9-6BA9A46FACC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDR.Web.Api", "MDR.Web.Api\MDR.Web.Api.csproj", "{139ECE25-8AB0-4742-9646-65ABC4455096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3180BC9-7720-46CB-9788-B3991AE801E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3180BC9-7720-46CB-9788-B3991AE801E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3180BC9-7720-46CB-9788-B3991AE801E0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3180BC9-7720-46CB-9788-B3991AE801E0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9D367164-4D98-490A-917C-AB030CB411C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D367164-4D98-490A-917C-AB030CB411C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D367164-4D98-490A-917C-AB030CB411C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D367164-4D98-490A-917C-AB030CB411C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33486E0D-BD55-498F-86D9-6BA9A46FACC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33486E0D-BD55-498F-86D9-6BA9A46FACC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33486E0D-BD55-498F-86D9-6BA9A46FACC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33486E0D-BD55-498F-86D9-6BA9A46FACC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{139ECE25-8AB0-4742-9646-65ABC4455096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139ECE25-8AB0-4742-9646-65ABC4455096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139ECE25-8AB0-4742-9646-65ABC4455096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139ECE25-8AB0-4742-9646-65ABC4455096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
