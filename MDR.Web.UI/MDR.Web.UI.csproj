@@ -87,6 +87,7 @@
     <Content Include="app\contact\contactController.js" />
     <Content Include="app\damageReport\damageReport.html" />
     <Content Include="app\damageReport\damageReportController.js" />
+    <Content Include="app\layout\messages.html" />
     <Content Include="app\layout\topnav.html" />
     <Content Include="app\layout\topnavController.js" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -94,6 +95,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.united.min.css" />
+    <Content Include="Content\Images\Pencil-icon-1005134425.png" />
+    <Content Include="Content\mdr-custom-style.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />

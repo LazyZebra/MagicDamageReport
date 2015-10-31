@@ -1,3 +1,60 @@
 ﻿<div ng-controller="contactController as vm">
-    <h1>Contact page</h1>
+    <form name="contactForm" class="container-fluid panel panel-default" novalidate
+          ng-submit="vm.sendMessage()">
+        <h2>Contact form</h2>
+        <div class="col-md-6">
+            <div class="form-group"
+                 ng-class="{ 'has-error': contactForm.name.$touched && contactForm.name.$invalid }">
+                <label for="name">Name</label>
+                <input type="text"
+                       class="form-control"
+                       name="name"
+                       ng-model="vm.name"
+                       ng-minlength="3"
+                       ng-maxlength="12"
+                       placeholder="Name" required />
+            </div>
+            <div class="text-danger" ng-messages="contactForm.name.$error" ng-show="contactForm.name.$touched">
+                <div ng-messages-include="app/layout/messages.html"></div>
+            </div>
+            <div class="form-group"
+                 ng-class="{ 'has-error': contactForm.email.$touched && contactForm.email.$invalid }">
+                <label for="email">Email</label>
+                <input type="email"
+                       class="form-control"
+                       name="email"
+                       ng-model="vm.email"
+                       placeholder="Email" required />
+            </div>
+            <div class="text-danger" ng-messages="contactForm.email.$error" ng-show="contactForm.email.$touched">
+                <div ng-messages-include="app/layout/messages.html"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group"
+                 ng-class="{ 'has-error': contactForm.message.$touched && contactForm.message.$invalid }">
+                <label for="message">Message</label>
+                <textarea type="text" rows="5"
+                          class="form-control no-resize"
+                          name="message"
+                          ng-model="vm.message"
+                          ng-minlength="4"
+                          ng-maxlength="400"
+                          required />
+            </div>
+            <div class="text-danger" ng-messages="contactForm.message.$error" ng-show="contactForm.message.$touched">
+                <div ng-messages-include="app/layout/messages.html"></div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group text-right">
+                <button type="submit"
+                        class="btn btn-success"
+                        ng-disabled="contactForm.$invalid">
+                    Send&nbsp;
+                    <span class="glyphicon glyphicon-send"></span>
+                </button>
+            </div>
+        </div>
+    </form>
 </div>

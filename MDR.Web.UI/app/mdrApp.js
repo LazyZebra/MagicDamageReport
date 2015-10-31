@@ -1,7 +1,7 @@
 ﻿(function () {
     "use strict";
 
-    angular.module("mdrApp", ['ngRoute'])
+    angular.module("mdrApp", ['ngRoute', 'ngMessages'])
     .config(routeConfig);
 
     function routeConfig($routeProvider) {
