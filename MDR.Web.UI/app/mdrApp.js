@@ -4,7 +4,7 @@
     angular.module("mdrApp", ['ngRoute', 'ngMessages'])
     .config(routeConfig);
 
-    function routeConfig($routeProvider) {
+    function routeConfig($routeProvider, $locationProvider) {
         $routeProvider.
             when('/', {
                 templateUrl: 'app/damageReport/damageReport.html',
@@ -15,5 +15,10 @@
                 controller: 'contactController'
             })
             .otherwise({ redirectTo: '/' });
+
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
     };
 })();
