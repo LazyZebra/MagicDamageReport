@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "MDR";
+    Layout = null;
+}
+
+<html ng-app="mdrApp">
+
+<head>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/mdrApp/style")
+    @Scripts.Render("~/bundles/mdrApp/script")
+
+</head>
+<body class="container">
+    <div ng-include="'app/layout/topnav.html'"></div>
+    <div ng-view></div>
+</body>
+</html>
