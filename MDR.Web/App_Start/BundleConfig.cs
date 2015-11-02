@@ -37,8 +37,6 @@ namespace MDR.Web
                 "~/app/contact/*.js",
                 "~/app/damageReport/damageReportController.js",
                 "~/app/layout/topnavController.js"));
-
-            BundleTable.EnableOptimizations = true;
         }
     }
 }
