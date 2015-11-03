@@ -8,12 +8,13 @@ namespace MDR.Web.UI.Controllers
 {
     public class DamageReportController : Controller
     {
-        IRepository<DamageReport> _repository;
+        //IRepository<DamageReport> _repository;
 
-        public DamageReportController(DamageReportRepository repository)
-        {
-            _repository = repository;
-        }
+        //public DamageReportController(DamageReportRepository repository)
+        //{
+        //    _repository = repository;
+        //}
+
         public ActionResult Index()
         {
             var damageReport = new CreateDamageReportViewModel();
