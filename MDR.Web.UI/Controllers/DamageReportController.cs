@@ -1,4 +1,6 @@
-﻿using MDR.Web.UI.Models;
+﻿using MDR.Data.Sql.Repositories;
+using MDR.Domain.Model;
+using MDR.Web.UI.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -6,6 +8,12 @@ namespace MDR.Web.UI.Controllers
 {
     public class DamageReportController : Controller
     {
+        IRepository<DamageReport> _repository;
+
+        public DamageReportController(DamageReportRepository repository)
+        {
+            _repository = repository;
+        }
         public ActionResult Index()
         {
             var damageReport = new CreateDamageReportViewModel();
@@ -23,9 +31,16 @@ namespace MDR.Web.UI.Controllers
             return View(damageReport);
         }
 
-        public JsonResult Save()
+        [HttpPost]
+        public JsonResult SaveReport(CreateDamageReportItemViewModel model)
         {
-            return Json("");
+            if (ModelState.IsValid)
+            {
+
+                return Json("Success");
+            }
+
+            return Json("Error");
         }
     }
 }
