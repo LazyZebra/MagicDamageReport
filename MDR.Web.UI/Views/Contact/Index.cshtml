@@ -1,0 +1,42 @@
+﻿@model MDR.Web.UI.Models.ContactMessage
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("SendMessage", "Contact", null, FormMethod.Post))
+{
+    <br />
+    <div class="container-fluid panel panel-default">
+        <h2>Contact form</h2>
+        <div class="col-md-6 fortyfive-percent-width">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-6 fortyfive-percent-width">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Message, new { @class = "control-label" })
+                @Html.TextAreaFor(m => m.Message, new { @class = "form-control no-resize", rows = 5 })
+                @Html.ValidationMessageFor(m => m.Message, null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group text-right">
+                <button type="submit" class="btn btn-success">
+                    Send&nbsp;
+                    <span class="glyphicon glyphicon-send"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
