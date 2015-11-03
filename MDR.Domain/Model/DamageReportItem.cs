@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MDR.Domain.Model
+﻿namespace MDR.Domain.Model
 {
     public class DamageReportItem : BaseModel
     {

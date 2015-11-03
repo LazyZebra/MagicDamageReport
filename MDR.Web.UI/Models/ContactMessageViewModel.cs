@@ -2,7 +2,7 @@
 
 namespace MDR.Web.UI.Models
 {
-    public class ContactMessage
+    public class ContactMessageViewModel
     {
         [Required]
         [MinLength(2, ErrorMessage = "Minimum length is 2")]

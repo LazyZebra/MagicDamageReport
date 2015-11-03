@@ -7,12 +7,12 @@ namespace MDR.Web.UI.Controllers
     {
         public ActionResult Index()
         {
-            var message = new ContactMessage();
+            var message = new ContactMessageViewModel();
             return View(message);
         }
 
         [HttpPost]
-        public JsonResult SendMessage(ContactMessage message)
+        public JsonResult SendMessage(ContactMessageViewModel message)
         {
             if (ModelState.IsValid)
             {
